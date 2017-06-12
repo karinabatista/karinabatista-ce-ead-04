@@ -5,10 +5,10 @@ body {
 }
 
 .cabecalhoRodape {  
-  background-color : navy;
+  background-color : red;
   color            : white;
   text-align       : center;
-  font-style       : italic;
+  font-style       : normal;
   height           : 100px;
   line-height      : 100px;
   vertical-align   : middle;  
