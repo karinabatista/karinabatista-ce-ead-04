@@ -32,16 +32,6 @@
                  
           //Obtendo o resultado da consulta
           $result = $mysqli->query($sql);
-          
-          //Para cada linha obtida, montamos uma div e incluímos a 
-          //imagem do livro, juntamente com os atributos title e alt
-          for ($i = 0; $i < $mysqli->affected_rows; $i++) {
-            $dados = $result->fetch_assoc();
-            echo "<div class='livro'>
-                    <img width='130' height='200' alt='" . $dados['titulo'] . "' title='" . $dados['titulo'] .
-                         "' src='" . $dados['imagem'] . "'>
-                  </div>";             
-          }
         ?>
       </div>    
       
@@ -74,7 +64,7 @@
               <input type='submit' value='Login'>
             </label>
             <span>
-              Novo usuário? Clique <a href="./cadastro.php">aqui</a> e faça o seu cadastro!
+              Novo usuário? Clique <a href="#">aqui</a> e faça o seu cadastro!
             </span>
           </fieldset>          
         </form>
