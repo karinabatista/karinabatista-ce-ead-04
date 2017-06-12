@@ -1,0 +1,29 @@
+body {
+  font-size   : 100%;
+  margin      : 0;
+  font-family : Calibri;    
+}
+
+.cabecalhoRodape {  
+  background-color : navy;
+  color            : white;
+  text-align       : center;
+  font-style       : italic;
+  height           : 100px;
+  line-height      : 100px;
+  vertical-align   : middle;  
+}
+
+.cabecalhoRodape h1 {
+  margin-top : 0;
+  font-size  : 3em;
+}
+
+.cabecalhoRodape h2 {
+  margin-bottom : 0;
+  font-size     : 2em;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin : 1%;
+}

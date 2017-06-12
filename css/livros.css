@@ -1,0 +1,27 @@
+﻿h1 {
+  text-align : center;
+}
+
+fieldset {
+  margin : auto;  
+  width  : 50%;
+  border : none;  
+}
+
+label {
+  display     : block;
+  margin-left : 1%;
+}
+
+input, select {
+  margin-left   : 1%;
+  margin-bottom : 1%;
+}
+
+.texto {
+  width : 40%;
+}
+
+.numero {
+  width : 10%;
+}

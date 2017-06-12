@@ -1,0 +1,38 @@
+table {
+  margin : 0 auto;
+}
+
+caption {
+  margin      : 20px;
+  font-size   : 20px;
+  font-weight : bold;
+}
+
+tr:nth-child(even) {
+  background: #CCC;
+}
+
+tr:nth-child(odd) {
+  background: #FFF;
+}
+
+.center {
+  text-align : center;
+}
+
+#totalPedido {
+  font-family : "Lucida Sans";
+  font-weight : bold;
+  font-size   : 20px;
+}
+
+#valorPedido {
+  font-family : "Lucida Sans";
+  font-weight : bold;
+  font-size   : 20px;
+  color       : #990000;
+}
+
+form {
+  margin : 0 auto;
+}

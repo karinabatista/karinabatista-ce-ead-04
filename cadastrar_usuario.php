@@ -11,14 +11,7 @@
   foreach ($_POST as $chave => $valor)
     $$chave = $valor;   
   
-  //Função utilizada para scripts longos, que demandam
-  //mais tempo para serem executados. Neste caso, definimos
-  //que o upload deve ser feito em até 60 segundos.
-  set_time_limit (60);	
-  
-  //Formatando o preço digitad pelo usuário
-  $preco = str_replace (',', '.', $preco);
-  
+ 
   //Obtendo o último auto-incremento da tabela de livros para
   //cadastrarmos o próximo livro
   $result = $mysqli->query(" SELECT AUTO_INCREMENT           " .
@@ -29,10 +22,7 @@
   $dados           = $result->fetch_assoc();
   $contAtual       = $dados['AUTO_INCREMENT'];
   
-  $nomeArquivo     = $_FILES['arquivo']['name'];
-  $tamanho_arquivo = $_FILES['arquivo']['size']; 
-  $tempArquivo     = $_FILES['arquivo']['tmp_name'];
-  
+   
   $extArquivo      = strrchr($nomeArquivo, '.');  
   $nomeFinal       = $contAtual . $extArquivo;    
   $imagem          = $diretorio . $nomeFinal;    
@@ -60,7 +50,7 @@
   else {
     
     //Realizando a inserção no banco de dados
-    $sqlInsert = " INSERT INTO LIVROS (CATEGORIA, TITULO, AUTOR, PRECO, IMAGEM, QTDE)    " . 
+    $sqlInsert = " INSERT INTO CLIENTES (CATEGORIA, TITULO, AUTOR, PRECO, IMAGEM, QTDE)    " . 
                   " VALUES ($categoria, '$titulo', '$autor', '$preco', '$imagem', $qtde) ";
 
     $mysqli->query($sqlInsert);
